@@ -73,9 +73,17 @@ function App() {
 
   return (
     <div className="App">
+      <h2>
+        <span className='tic'>Tic</span>
+        <span className='dash'>-</span> 
+        <span className='tac'>Tac</span>
+        <span className='dash'>-</span>
+        <span className='tic'>Toe</span>
+      </h2>
       <ScoreBoard scores={scores} xPlaying={xPlaying}/>
       <Board board={board} onClick={ gameOver ? resetBoard : handleBoxClick} />
       <ResetButton resetBoard = {resetBoard}/>
+      <h4>Created and developed by - Avinash Kalmegh</h4>
     </div>
   );
 }
